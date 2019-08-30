@@ -13,8 +13,13 @@ html {
 
 body {
   font-size: 100%;
-  font-family: consolas;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   line-height: 1.5;
+  background-image: url("../images/botanical-dirt-illustration-1022923.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #wrapper {
@@ -25,6 +30,7 @@ body {
     "... container container ...";
   width: 100%;
   margin: 0 auto;
+  font-size: 1.25em;
 }
 
 #title {
@@ -32,6 +38,8 @@ body {
   margin-top: 1.25em;
   color: #38d39f;
   font-size: 2.5rem;
+  text-shadow: 2px 2px 2px #fff;
+  font-family: "Anton", sans-serif;
 }
 
 #description {
@@ -104,4 +112,31 @@ body {
 .radio-elements li {
   display: block;
   margin-top: 8px;
+}
+
+.asterix {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  #wrapper {
+    grid-template-areas:
+      "... header  ..."
+      "... container ...";
+    font-size: 1rem;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+  .form-input {
+    grid-template-areas:
+      "... form-label ..."
+      "... form-element ..."
+      "... submit ...";
+  }
+
+  .form-label {
+    text-align: left;
+  }
 }
