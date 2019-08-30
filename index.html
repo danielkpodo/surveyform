@@ -23,7 +23,8 @@
                         <label for="name" id="name-label"><span class="asterix">&#42;</span>Name</label>
                     </div>
                     <div class="form-element">
-                        <input type="text" placeholder="Enter your name" id="name" name="name" required>
+                        <input type="text" placeholder="Enter your name" id="name" name="name" required
+                            class="form-control">
                     </div>
                 </div>
                 <div class="form-input">
@@ -31,7 +32,8 @@
                         <label for="email" id="email-label"><span class="asterix">&#42;</span>Email</label>
                     </div>
                     <div class="form-element">
-                        <input type="email" placeholder="Enter your email" id="email" name="email" required>
+                        <input type="email" placeholder="Enter your email" id="email" name="email" required
+                            class="form-control">
                     </div>
                 </div>
                 <div class="form-input">
@@ -39,7 +41,8 @@
                         <label for="number" id="number-label"><span class="asterix">&#42;</span>Age</label>
                     </div>
                     <div class="form-element">
-                        <input type="number" placeholder="Your age" min="18" max="40" id="number" name="age" required>
+                        <input type="number" placeholder="Your age" min="18" max="40" id="number" name="age" required
+                            class="form-control">
                     </div>
                 </div>
                 <div class="form-input">
@@ -47,7 +50,7 @@
                         <label for="dropdown">Which option describes your category</label>
                     </div>
                     <div class="form-element">
-                        <select name="role" id="dropdown" name="role">
+                        <select name="role" id="dropdown" name="role" class="form-control">
                             <option value="unselected">Choose an option</option>
                             <option value="full time">Programmer</option>
                             <option value="student">University Grad</option>
@@ -89,7 +92,8 @@
                         <label for="likes">Which method of Family Planning are you likely to recommend most</label>
                     </div>
                     <div class="form-element">
-                        <select name="role" id="likes" name="role">
+                        <select name="role" id="likes" name="role" class="form-control">
+                            <option value="nothing">Choose an option</option>
                             <option value="hormone">Hormonal Contraception</option>
                             <option value="barrier">Barrier Method</option>
                             <option value="emergency contraception">Emergency Contraception</option>
@@ -151,12 +155,14 @@
                         <label for="comments"><span class="asterix">&#42;</span>Any comments or Suggestions?</label>
                     </div>
                     <div class="form-element">
-                        <textarea name="comments" id="comments" cols="30" rows="4"
-                            placeholder="leave your comments..."></textarea>
+                        <textarea name="comments" id="comments" cols="30" rows="4" placeholder="leave your comments..."
+                            class="form-control"></textarea>
                     </div>
                 </div>
-                <div class="submit">
-                    <input type="submit" id="submit" value="Submit Survey">
+                <div class="form-input submit-container">
+                    <div class="submit">
+                        <input type="submit" id="submit" value="Submit Survey">
+                    </div>
                 </div>
             </form>
         </main>
