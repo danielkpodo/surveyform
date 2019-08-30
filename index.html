@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assessment of Family Planning Methods Among Adults aged 19 - 40 yrs</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <h1 id="title">Narh's Family Planning Survey</h1>
+        </header>
+        <main class="container">
+            <p id="description">Assessment of Preferred Family Planning methods </p>
+            <form action="#" method="post" id="survey-form">
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="name" id="name-label"><span class="asterix">&#42;</span>Name</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="text" placeholder="Enter your name" id="name" name="name" required>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="email" id="email-label"><span class="asterix">&#42;</span>Email</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="email" placeholder="Enter your email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="number" id="number-label"><span class="asterix">&#42;</span>Age</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="number" placeholder="Your age" min="18" max="40" id="number" name="age" required>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="dropdown">Which option describes your category</label>
+                    </div>
+                    <div class="form-element">
+                        <select name="role" id="dropdown" name="role">
+                            <option value="unselected">Choose an option</option>
+                            <option value="full time">Programmer</option>
+                            <option value="student">University Grad</option>
+                            <option value="cook">Married</option>
+                            <option value="developer">Adolescent</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="dropdown">How likely are you to recommend Family planning to a friend?</label>
+                    </div>
+                    <div class="form-element">
+                        <ul class="radio-elements">
+                            <li>
+                                <label for="definitely">
+                                    <input type="radio" name="recommendation" id="definitely">
+                                    Definitely
+                                </label>
+                            </li>
+                            <li>
+                                <label for="maybe">
+                                    <input type="radio" name="recommendation" id="maybe">
+                                    Maybe
+                                </label>
+                            </li>
+                            <li>
+                                <label for="not-sure">
+                                    <input type="radio" name="recommendation" id="not-sure">
+                                    Not sure
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="likes">Which method of Family Planning are you likely to recommend most</label>
+                    </div>
+                    <div class="form-element">
+                        <select name="role" id="likes" name="role">
+                            <option value="hormone">Hormonal Contraception</option>
+                            <option value="barrier">Barrier Method</option>
+                            <option value="emergency contraception">Emergency Contraception</option>
+                            <option value="long lasting">Permanent Contraception</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="about">What are the advantages of family planning ?</label>
+                    </div>
+                    <div class="form-element">
+                        <ul class="radio-elements">
+                            <li>
+                                <label for="unwanted">
+                                    <input type="checkbox" name="recommendation" id="unwanted"
+                                        value="preventio of unwanted pregnancy">
+                                    Preventing ill-health
+                                </label>
+                            </li>
+                            <li>
+                                <label for="mortality">
+                                    <input type="checkbox" name="recommendation" id="mortality"
+                                        value="reducing infant mortality">
+                                    Reducing infant mortality
+                                </label>
+                            </li>
+                            <li>
+                                <label for="HIV">
+                                    <input type="checkbox" name="recommendation" id="HIV" value="prevent HIV/AIDS">
+                                    Helping to prevent HIV/AIDS
+                                </label>
+                            </li>
+                            <li>
+                                <label for="empower">
+                                    <input type="checkbox" name="recommendation" id="empower" value="empowering people">
+                                    Empowering people
+                                </label>
+                            </li>
+                            <li>
+                                <label for="adolescent">
+                                    <input type="checkbox" name="recommendation" id="adolescent"
+                                        value="reducing pregnancies">
+                                    Reducing adolescent pregnancies
+                                </label>
+                            </li>
+                            <li>
+                                <label for="growth">
+                                    <input type="checkbox" name="recommendation" id="growth" value="slow pop growth">
+                                    Slowing population growth
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="form-label">
+                        <label for="comments"><span class="asterix">&#42;</span>Any comments or Suggestions?</label>
+                    </div>
+                    <div class="form-element">
+                        <textarea name="comments" id="comments" cols="30" rows="4"
+                            placeholder="leave your comments..."></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submit" value="Submit Survey">
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
